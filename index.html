@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="css/huawei-main.css" rel="stylesheet">
+    <title>Hello, world!</title>
+</head>
+
+<body style="background: black;color:white;font-size:14px;">
+    <div style="height: 70px;width:100%;position:relative;display:block;"></div>
+    <div class="container">
+
+        <div class="header">
+            <div class="header-inner-content">
+
+                <img class="logo" src="img/giphy-logo.svg" />
+
+                <div class="giphy-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Reactions</a>
+                        </li>
+                        <li>
+                            <a href="#"> Entertainment</a>
+                        </li>
+                        <li>
+                            <a href="#"> Sports</a>
+                        </li>
+                        <li>
+                            <a href="#"> Stickers</a>
+                        </li>
+                        <li>
+                            <a href="#"> Artists</a>
+                        </li>
+                        <li>
+                            <a class="dropthatdown" href="#"> ..</a>
+                            <div class="dropped-menu">
+                                <div>
+                                    <div>
+                                        <h2><a>Category</a></h2>
+                                        <ul>
+                                            <li><a href="#">GIPHY Studios</a></li>
+                                            <li><a href="#">Animals</a></li>
+                                            <li><a href="#">Holidays</a></li>
+                                            <li><a href="#">Food & Drink</a></li>
+                                            <li><a href="#">Memes</a></li>
+                                            <li><a href="#">Actions</a></li>
+                                            <li><a href="#">Emotions</a></li>
+                                            <li><a href="#">Anime</a></li>
+                                            <li><a href="#">Gaming</a></li>
+                                            <li><a href="#">Cartoons</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2><a>Stickers</a></h2>
+                                        <ul>
+                                            <li><a href="#">Original</a></li>
+                                            <li><a href="#">Trending</a></li>
+                                            <li><a href="#">Reactions</a></li>
+                                            <li><a href="#">Packs</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2><a>Apps</a></h2>
+                                        <ul>
+                                            <li><a href="#">GIPHY</a></li>
+                                            <li><a href="#">GIPHY World</a></li>
+                                            <li><a href="#">GIPHY Cam</a></li>
+                                            <li><a href="#">GIPHY Capture</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2><a>About</a></h2>
+                                        <ul>
+                                            <li><a href="#">Team</a></li>
+                                            <li><a href="#">Engineering Blog</a></li>
+                                            <li><a href="#">Studios</a></li>
+                                            <li><a href="#">Marketers</a></li>
+                                            <li><a href="#">Developers</a></li>
+                                            <li><a href="#">Labs</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Support</a></li>
+                                            <li><a href="#">Terms</a></li>
+                                            <li><a href="#">Privacy</a></li>
+                                            <li><a href="#">DMCA</a></li>
+                                            <li><a href="#">Guidelines</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#">
+                        <span>Upload</span>
+                    </a>
+                    <a href="#">
+                        <span>Create</span>
+                    </a>
+                </div>
+
+                <div>
+                    <div class="login-group">
+                        <a id="login-button" rel="nofollow" href="#">
+                            <img style="width:10px;height:10px;display:inline-block;" src="img/man-user.svg">
+                            <span class="nav-text">Log In</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="background: black;">
+            <div class="deneme">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 100) {
+                $(".header").addClass("active");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+                $(".header").removeClass("active");
+            }
+        });
+
+        $('div.giphy-menu ul li:hover ').hover(function () {
+            $(this).css('background', '');
+        });
+    </script>
+</body>
+
+</html>
